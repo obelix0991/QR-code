@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Grocery QR Scanner</string>
+    <string name="price_format">$%.2f</string>
+</resources>
