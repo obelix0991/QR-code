@@ -4,8 +4,10 @@ workflows:
     instance_type: mac_mini_m1
     environment:
       java: 11
-      android_sdk: latest
+      android_sdk_version: 33
     scripts:
+      - name: Make gradlew executable
+        script: chmod +x ./gradlew
       - name: Set up local properties
         script: echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/local.properties"
       - name: Build debug APK
