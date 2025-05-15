@@ -1,6 +1,6 @@
 workflows:
   default:
-    name: Default Workflow
+    name: My Workflow
     instance_type: mac_mini_m1
     scripts:
       - name: Make gradlew executable
